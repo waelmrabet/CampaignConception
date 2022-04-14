@@ -1,0 +1,8 @@
+Migration and Database update EF Core
+
+
+Add Migration For N-tiers Architecture Project DB-First:
+    --  dotnet ef migrations add InitDatabase --project YourDataProjectName -s YourWebProjectName -c YourDbContextName --verbose 
+
+Update DataBase For N-tiers Architecture Project DB-First:
+    --  dotnet ef database update InitialCreate --project YourDataProjectName -s WebProjectName -c YourDbContextName --verbose
